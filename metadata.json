@@ -1,0 +1,24 @@
+{
+  "slug": "plain-language-notice-reviewer",
+  "title": "Plain Language Notice Reviewer",
+  "category": "accessibility",
+  "description": "Review notices for audience, clear actions, and alternate-format evidence.",
+  "fields": {
+    "notice_text": {
+      "label": "notice text",
+      "kind": "text",
+      "minimum": 120
+    },
+    "intended_audience": {
+      "label": "intended audience",
+      "kind": "required",
+      "minimum": 0
+    },
+    "alternate_format": {
+      "label": "alternate format",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

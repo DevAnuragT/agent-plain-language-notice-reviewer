@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: plain-language-notice-reviewer
+version: 0.1.0
+description: Review notices for audience, clear actions, and alternate-format evidence.
+skills:
+  - plain-language-notice-reviewer-skill
+tools:
+  - review-plain-language-notice-reviewer
+tags:
+  - accessibility
+  - evidence-driven

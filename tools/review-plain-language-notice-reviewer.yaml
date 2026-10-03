@@ -1,0 +1,54 @@
+{
+  "name": "review-plain-language-notice-reviewer",
+  "description": "Run Plain Language Notice Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "notice_text": {
+            "type": "string",
+            "description": "notice text"
+          },
+          "intended_audience": {
+            "type": "string",
+            "description": "intended audience"
+          },
+          "alternate_format": {
+            "type": "string",
+            "description": "alternate format"
+          }
+        },
+        "required": [
+          "notice_text",
+          "intended_audience",
+          "alternate_format"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-plain-language-notice-reviewer.py",
+    "runtime": "python3"
+  }
+}
